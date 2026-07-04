@@ -36,7 +36,11 @@ export const projects: Project[] = [
     problem: "Students struggle to map their academic background and skills to a fitting career path.",
     solution: "A Random Forest ML model trained on academic and skill inputs to recommend fitting career tracks. Built as an MSc IT capstone, covering the full pipeline — data prep, model training, and a usable interface.",
     coverImage: "/projects/weather.jpg",
-    images: ["/projects/career-ai.jpg"],
+    images: [
+      "/projects/career-ai.jpg",
+      "/projects/career-ai-1.jpg",
+      "/projects/career-ai-2.jpg",
+    ],
     tags: ["Python", "ML", "Random Forest"],
     githubUrl: "https://github.com/Vishvrajsinh2003-Rathod/career-recommender",
   },
