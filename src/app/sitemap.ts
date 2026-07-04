@@ -3,7 +3,7 @@ import { services } from "@/data/services";
 import { projects } from "@/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://vishvrajrathod.com";
+  const baseUrl = "https://vishvrajrathod.netlify.app";
 
   const serviceUrls = services.map((s) => ({
     url: `${baseUrl}/services/${s.slug}`,

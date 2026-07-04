@@ -75,7 +75,7 @@ export default function RootLayout({
               },
               sameAs: [
                 "https://github.com/Vishvrajsinh2003-Rathod",
-                "https://www.linkedin.com/in/vishvrajsinhrathod-8588322",
+                "https://www.linkedin.com/in/vishvrajsinh-rathod-8588322",
               ],
             }),
           }}
