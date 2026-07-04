@@ -5,7 +5,7 @@ export type Service = {
   description: string;
   longDescription: string;
   price: string;
-  category: "Websites & Platforms" | "Mobile Applications" | "Design Services";
+  category: "Websites & Platforms" | "Mobile Applications" | "Design Services" | "Quick Start";
   icon: string;
 };
 
@@ -99,6 +99,44 @@ export const services: Service[] = [
     category: "Design Services",
     icon: "🎨",
   },
+
+  // Quick Start — low-barrier, fast-turnaround services
+  {
+    slug: "landing-page",
+    title: "One-Page Landing Site",
+    subtitle: "Launch in days, not weeks",
+    description:
+      "A single, focused landing page for a product launch, event, or campaign — live in 3-5 days, no long back-and-forth.",
+    longDescription:
+      "Sometimes you don't need a full website — just one strong page that converts. This covers a single-page site with a hero section, key details, and a clear call-to-action (contact form, WhatsApp button, or signup), mobile-first and fast-loading. Ideal for testing an idea, promoting an event, or getting a professional presence live quickly while a bigger project is planned.",
+    price: "₹12,000",
+    category: "Quick Start",
+    icon: "⚡",
+  },
+  {
+    slug: "website-audit",
+    title: "Website Speed & SEO Audit",
+    subtitle: "Know what's actually wrong",
+    description:
+      "A clear, no-jargon report on why your site loads slowly or ranks poorly — plus a prioritized fix list.",
+    longDescription:
+      "Before spending money on a rebuild, it often helps to know exactly what's broken. I run your site through performance and SEO diagnostics, then deliver a plain-language report — page speed issues, mobile usability problems, broken links, missing meta tags — ranked by impact and effort so you know what to fix first. No commitment to further work required.",
+    price: "₹3,000",
+    category: "Quick Start",
+    icon: "🔍",
+  },
+  {
+    slug: "bug-fix-small-update",
+    title: "Bug Fix / Small Update",
+    subtitle: "For existing sites — quick turnaround",
+    description:
+      "Something broken, outdated, or just needs a small tweak? Get it fixed without committing to a full redesign.",
+    longDescription:
+      "For an existing website that just needs attention — a broken form, an outdated section, a small design tweak, or a bug that's been bothering you. Scoped and quoted per request, usually turned around within 1-3 days. A low-commitment way to work together before a bigger project.",
+    price: "₹1,500",
+    category: "Quick Start",
+    icon: "🛠️",
+  },
 ];
 
 export function getServiceBySlug(slug: string) {
@@ -106,6 +144,7 @@ export function getServiceBySlug(slug: string) {
 }
 
 export const categories = [
+  "Quick Start",
   "Websites & Platforms",
   "Mobile Applications",
   "Design Services",

@@ -3,7 +3,7 @@ import { services, categories, Service } from "@/data/services";
 
 export const metadata = {
   title: "Services & Pricing | Vishvraj Rathod",
-  description: "Web, mobile, and AI-readiness services offered by Vishvraj Rathod, with transparent starting prices.",
+  description: "Web, mobile, and AI-readiness services offered by Vishvraj Rathod. Get a custom quote based on your project's scope.",
 };
 
 const categoryIcons: Record<string, string> = {
@@ -19,8 +19,8 @@ function ServiceCard({ service }: { service: Service }) {
       <div className="service-subtitle">{service.subtitle}</div>
       <p>{service.description}</p>
       <div className="service-price-row">
-        <span className="label">Starting from</span>
-        <span className="price">{service.price}</span>
+        <span className="label">Pricing</span>
+        <span className="price">Get a Custom Quote</span>
       </div>
       <div className="service-card-arrow">View details →</div>
     </Link>

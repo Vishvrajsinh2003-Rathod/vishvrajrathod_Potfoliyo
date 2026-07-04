@@ -136,9 +136,7 @@ export default function Home() {
           <div className="project-card">
           <div
   className="project-thumb thumb-ai"
-  style={{
-    background: "#000",
-  }}
+  style={{ backgroundImage: "url('/projects/client-tracker.jpg')" }}
 >
   <div className="thumb-icon"><Smartphone size={32} color="#fff" /></div>
   <div className="thumb-label">MOBILE · REACT NATIVE</div>
@@ -165,7 +163,7 @@ export default function Home() {
           </div>
 
           <div className="project-card">
-          <div className="project-thumb thumb-restaurant">
+          <div className="project-thumb thumb-restaurant" style={{ backgroundImage: "url('/projects/restaurant.jpg')" }}>
   <div className="thumb-icon"><UtensilsCrossed size={32} color="#fff" /></div>
   <div className="thumb-label">WEB · RESTAURANT</div>
 </div>
@@ -180,9 +178,7 @@ export default function Home() {
           <div className="project-card">
           <div
   className="project-thumb thumb-weather"
-  style={{
-    background: "#000",
-  }}
+  style={{ backgroundImage: "url('/projects/weather.jpg')" }}
 >
   <div className="thumb-icon"><CloudSun size={32} color="#fff" /></div>
   <div className="thumb-label">WEB · WEATHER</div>

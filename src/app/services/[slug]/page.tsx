@@ -32,7 +32,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     notFound();
   }
 
-  const message = `Hi Vishvraj, I'm interested in your "${service.title}" service (Starting from ${service.price}). I'd like to discuss my requirements.`;
+  const message = `Hi Vishvraj, I'm interested in your "${service.title}" service. Could you share a quote based on my requirements?`;
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -61,8 +61,8 @@ export default async function ServiceDetailPage({ params }: Props) {
 
         <aside className="service-detail-sidebar">
           <div className="service-detail-price-card">
-            <span className="label">Starting from</span>
-            <span className="price">{service.price}</span>
+            <span className="label">Pricing</span>
+            <span className="price">Get a Custom Quote</span>
             <a
               href={whatsappHref}
               target="_blank"

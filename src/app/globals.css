@@ -809,7 +809,7 @@ section {
 }
 
 .ticker span::after {
-  content: 'â—†';
+  content: 'Ã¢â€”â€ ';
   color: var(--white);
   font-size: 16px;
 }
@@ -1101,7 +1101,7 @@ footer {
   font-weight: 700;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.85rem;
-  color: #d32f2f; /* red accent â€” adjust to match your existing accent variable */
+  color: #d32f2f; /* red accent Ã¢â‚¬â€ adjust to match your existing accent variable */
 }
 
 .service-back-link {
@@ -1203,7 +1203,7 @@ footer {
 }
 
 
-/* ===== PROJECT THUMB â€” v2: icons + optional screenshots + stronger animation ===== */
+/* ===== PROJECT THUMB Ã¢â‚¬â€ v2: icons + optional screenshots + stronger animation ===== */
 
 .project-thumb {
   position: relative;
@@ -1583,4 +1583,35 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ===== FINAL FIX: contain project thumbnails so screenshots never
+   overflow their card. This intentionally uses !important to win over
+   the older conflicting .project-thumb rules above without deleting
+   them (safer than risking breaking an effect relied on elsewhere). ===== */
+.project-thumb {
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.project-thumb::before,
+.project-thumb::after {
+  border-radius: inherit;
+}
+
+/* Dark overlay so the icon + label stay readable over any screenshot */
+.project-thumb.thumb-ai,
+.project-thumb.thumb-weather,
+.project-thumb.thumb-restaurant,
+.project-thumb.thumb-portfolio,
+.project-thumb.thumb-tictactoe,
+.project-thumb.thumb-snake {
+  box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.45);
 }
