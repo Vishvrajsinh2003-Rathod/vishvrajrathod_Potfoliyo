@@ -1,0 +1,22 @@
+{
+  "name": "Premium AI Developer Portfolio",
+  "short_name": "Portfolio.AI",
+  "description": "Futuristic interactive portfolio engineered with React, Next.js, and Framer Motion.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030014",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/next.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/next.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
