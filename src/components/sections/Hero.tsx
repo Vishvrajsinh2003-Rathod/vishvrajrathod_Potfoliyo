@@ -136,7 +136,10 @@ export default function Hero() {
           </a>
 
           <a
-            href="#resume"
+            href="/Vishvrajsinh_Rathod_CV.pdf"
+            download="Vishvrajsinh_Rathod_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center space-x-2 px-6 py-3.5 rounded-xl border border-border glassmorphism hover:bg-foreground/5 text-foreground/80 font-medium transition-all text-sm hover:scale-105"
           >
             <span>{t("heroBtnResume")}</span>
